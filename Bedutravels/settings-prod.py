@@ -83,8 +83,11 @@ WSGI_APPLICATION = 'Bedutravels.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'toshiya$Bedutravels',
+        'USER': 'toshiya',
+        'PASSWORD': 'pythonsql',
+        'HOST': 'toshiya.mysql.pythonanywhere-services.com',
     }
 }
 
