@@ -12,7 +12,8 @@ from .models import Tour, Zona
 @login_required()
 def index(request):
 	""" Atiende la petición GET / """
-	tours = Tour.objects.filter(zonaSalida__nombre = "CDMX")
+	# tours = Tour.objects.filter(zonaSalida__nombre = "CDMX")
+	tours = Tour.objects.all()
 
 	return render(request, "tours/index.html", {"tours":tours})
 
